@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { User } from "../types";
+import { User, Task } from "../types";
 
 @Component({
   selector: "app-task-list",
@@ -10,4 +10,9 @@ import { User } from "../types";
 })
 export class TaskListComponent {
   @Input({ required: true }) user?: User;
+  @Input({ required: true }) userTasks?: Task;
+
+  get getUserTasks() {
+    return 
+  }
 }

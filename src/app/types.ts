@@ -3,3 +3,11 @@ export type User = {
   avatar: string;
   name: string;
 };
+
+export type Task = {
+  id: string;
+  userId: string;
+  title: string;
+  summary: string;
+  dudeDate: string;
+};
